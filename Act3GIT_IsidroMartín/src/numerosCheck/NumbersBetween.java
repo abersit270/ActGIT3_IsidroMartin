@@ -14,6 +14,7 @@ public class NumbersBetween {
 		int minimo				= 0;
 		int maximo				= 0;
 		int inter				= 0;
+		int numberCheck			= 0;
 		boolean isIguales		= false;
 		
 		//Inicio del programa
@@ -25,6 +26,7 @@ public class NumbersBetween {
 			//Leemos los valores
 			minimo = check.inputCheckInt("Introduce un valor: ", lectura);
 			maximo = check.inputCheckInt("Introduce un valor: ", lectura);
+			numberCheck = check.inputCheckInt("Introduce un valor a comprobar: ", lectura);
 			
 			if(minimo != maximo) {
 				isIguales = false;
@@ -50,6 +52,9 @@ public class NumbersBetween {
 				pantalla.pressEnter(lectura);
 			}
 		} while (isIguales == true);
+		
+		if (minimo <= numberCheck && maximo >= numberCheck)
+			System.out.println("El valor " + numberCheck + " esta entre " + minimo + " y " + maximo + ".");
 		lectura.close();
 	}
 
