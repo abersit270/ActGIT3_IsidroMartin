@@ -4,7 +4,7 @@ public class NumerosAleatorios {
 
 	private static int MAX		= 10;
 	private static int MIN 		= 1;
-	private static int CANTIDAD	= 20;
+	private static int CANTIDAD	= 30;
 	private static int VALORES	= MAX - MIN + 1;
 	
 	public static void main(String[] args) {
